@@ -34,7 +34,7 @@ void keyPressed() {  //鍵盤事件  p.s用.英文輸入法
       ArrayList<Integer> x = xx.get(I);
       ArrayList<Integer> y = yy.get(I);
       for (int i=1; i<x.size(); i++) {
-        println("  vertex(" + mouseX + "," + mouseY + ");"); //印出儲存在串列內的座標+程式碼
+        println("  vertex(" + x.get(i) + "," + y.get(i) + ");"); //印出儲存在串列內的座標+程式碼
       }
       println("endShape();");
     }
