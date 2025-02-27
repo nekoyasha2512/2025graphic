@@ -30,13 +30,13 @@ void mouseDragged() {  //滑鼠在拖異狀態下, 在內層串列中新增滑�
 void keyPressed() {  //鍵盤事件  p.s用.英文輸入法
   if ( key == 's'|| key == 'S') {    //在按下S鍵時, 印出串列內儲存的數值
     for (int I=0; I<xx.size(); I++) {
-      println("beginShape()");
+      println("beginShape();");
       ArrayList<Integer> x = xx.get(I);
       ArrayList<Integer> y = yy.get(I);
       for (int i=1; i<x.size(); i++) {
-        println("vertex(" + mouseX + "," + mouseY + ")"); //印出儲存在串列內的座標+程式碼
+        println("  vertex(" + mouseX + "," + mouseY + ");"); //印出儲存在串列內的座標+程式碼
       }
-      println("endShape()");
+      println("endShape();");
     }
   }
 }
